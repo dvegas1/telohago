@@ -1,8 +1,8 @@
 body{
     overflow-x:hidden;
-    font-family:'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif
+
 }
-video { 
+#mivideo { 
  
   min-width: 100%;
   min-height: 100%;
@@ -20,6 +20,63 @@ video {
  
 }
 
+#mivideodesing{
+
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%; 
+
+  z-index: -99999;
+
+
+}
+#serviciosdesing{
+ 
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: #d4b9494d;
+  color: white;
+
+
+}
+#services h3{
+color: #fff !important;
+}
+#about h2{
+        color:#fff !important
+}
+#team h2,h3{
+   color: #64659b !important;
+
+}
+#team h4{
+   color: red !important;
+
+}
+
+.section-subheading h3{
+    color:#fff !important
+}
+#cuadrovideo{
+
+}
+
+#sdasdmivideo{
+
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:0
+
+}
+
+
 p{
     line-height:1.75
 }
@@ -32,10 +89,50 @@ a:hover{
 .text-primary{
     color:#fed136!important
 }
-h1,h2,h3,h4,h5,h6{
-    font-weight:700;
-    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+h1 {
+       /* font-weight:700;*/
+    font-family: 'Oleo Script', cursive;
+
+-webkit-box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
+
+
+text-shadow: 1px 1px 1px #3b3939;
+   color: #fff;
+
+
+
+
+
+   -webkit-border-radius: 5px 5px 5px 5px;
+   background: #bbcb27;
+
+
+padding: 10px;
 }
+
+
+.bg-light h3,h2,p{
+    color: #454545 !important;
+}
+.team-member rounded-circle h4
+{
+     color: red !important;
+}
+h2{
+font-family: 'Cairo', sans-serif;
+
+}
+.service-heading{
+color: white !important;
+}
+h3,h5,h6{
+color: white;
+font-family: 'Great Vibes', cursive;
+font-size: 20pt;
+}
+
 section{
     padding:100px 0
 }
@@ -177,13 +274,14 @@ header.masthead .intro-text .intro-lead-in{
     line-height:22px;
     margin-bottom:25px;
     font-family:'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif
+
 }
 header.masthead .intro-text .intro-heading{
     font-size:50px;
     /*font-weight:700;
     line-height:50px;*/
     margin-bottom:25px;
-    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+    font-family: 'Great Vibes', cursive;
 }
 @media (min-width:768px){
     header.masthead .intro-text{
@@ -202,8 +300,9 @@ header.masthead .intro-text .intro-heading{
         font-weight:700;
         line-height:75px;
         margin-bottom:50px;
-   font-family: 'Ultra', serif;
-   text-shadow: 5px 5px 15px #242424;
+        text-shadow: 3px 3px 3px #242424;
+
+   font-family: 'Oswald', sans-serif;
         /*
         font-family: 'Oleo Script', cursive;
 
