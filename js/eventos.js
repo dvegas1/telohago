@@ -17,11 +17,31 @@ if( $('#idtabledescripcion').is(":visible") ){
 	
 		}
 
+});
 
+
+$('h4').click(function() {
+
+
+		// $("#idtabledescripcion").each(function(){
+			 
+			/// document.getElementById("idtabledescripcion").style.display = 'block';
+
+if( $('#idtabledescripcion').is(":visible") ){
+	
+		$("[id*=idtabledescripcion]").hide();
+	
+	}else{
+		
+		$("[id*=idtabledescripcion]").show();		
+	
+		}
 	
 
 
 });
+
+
 
 
 });

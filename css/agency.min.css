@@ -23,7 +23,11 @@ body{
   background-size: cover;
  
 }
-
+#idtabledescripcion th{
+text-shadow: 1px 0px 1px rgba(192, 192, 192, 0.9);
+color: #1a1515;
+background-image: radial-gradient(circle farthest-corner at center, #fff, #dadde0);
+}
 #mivideodesing{
 
   width: auto;
@@ -55,6 +59,7 @@ body{
 
 #services h3{
 color: #fff !important;
+font-size: 15pt;
 }
 #about h2{
         color:#fff !important
@@ -117,7 +122,7 @@ text-shadow: 1px 1px 1px #3b3939;
 
 
    -webkit-border-radius: 5px 5px 5px 5px;
-   background: #bbcb27;
+background: #e6c616;
 
 
 padding: 10px;
@@ -142,8 +147,19 @@ font-family: 'Cairo', sans-serif;
 
 }
 .service-heading{
-color: white !important;
+background: #fff;
+color: #1a4040 !important;
+cursor: pointer;
+padding: 10px;
+margin:15px 0;
+text-transform:none
+text-shadow: 1px 2px 3px #000;
+font-size: 14pt;
+-webkit-border-radius: 5px 5px 0px 0px;
+margin-bottom: 5px;
+margin-top: 22px;
 }
+
 h3,h5,h6{
 color: white;
 font-family: 'Great Vibes', cursive;
@@ -329,16 +345,7 @@ header.masthead .intro-text .intro-heading{
         font-family: 'Oleo Script', cursive;*/
     }
 }
-.service-heading{
-    margin:15px 0;
-    text-transform:none
 
-    text-shadow: 1px 2px 3px #000;
-font-weight: 600;
-font-size: 16pt;
-
-
-}
 #portfolio .portfolio-item{
     right:0;
     margin:0 0 15px
