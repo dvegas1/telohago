@@ -1,5 +1,12 @@
 $(document).ready( function() {
 
+
+$("#tituloservicios").click(function(event) {
+	
+			$("#tituloservicios").fadeIn(400);
+
+});
+	
 $('#tituloservicios,#btnweb,#btntiendas,#btnwordpress,#btnjoomla,#btnapi,#btnbd').click(function() {
 
 

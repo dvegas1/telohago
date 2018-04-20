@@ -1,6 +1,9 @@
 body{
     overflow-x:hidden;
 
+
+
+
 }
 #page-top{
 
@@ -51,12 +54,18 @@ background-image: radial-gradient(circle farthest-corner at center, #fff, #dadde
 
 }
 #idtabledescripcion{
+
     display: none;
 }
 .col-md-4{
     height: 50% !important;
 }
+#classservices{
 
+}
+#services{
+    display: block;
+}
 #services h3{
 color: #fff !important;
 font-size: 15pt;
@@ -69,7 +78,8 @@ font-size: 15pt;
 
 }
 #team h4{
-   color: red !important;
+   color: #382626 !important;
+
 
 }
 
@@ -105,34 +115,37 @@ a:hover{
 .text-primary{
     color:#fed136!important
 }
-h1 {
+#tituloservicios h1,h4 {
        /* font-weight:700;*/
     font-family: 'Oleo Script', cursive;
 
--webkit-box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
-box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.75);
 
-
-text-shadow: 1px 1px 1px #3b3939;
-   color: #fff;
-
-
-
-
-
-   -webkit-border-radius: 5px 5px 5px 5px;
-background: #e6c616;
-
-
+text-shadow: 1px 1px 0px #d4d4d4;
+-webkit-border-radius: 5px 5px 5px 5px;
 padding: 10px;
 cursor: pointer;
     margin-top: -10%;
     margin-bottom: 5%;
 
+  transition: 0.5s;
+background-size: 250% auto;
 
+background-image: linear-gradient(to right, #e7e7e7 0%, #f0f0f0 51%, #fff ,#fff ,#fff 100%);
+color: #155123;
+}
+#tituloservicios h1:hover{
+background-position: right center; /* change the direction of the change here */
+color: #5b681b;
 
 }
+#tituloservicios h4:hover{
+background-position: right center; /* change the direction of the change here */
+color: #0b2f14;
+
+}
+
+
+
 
 
 .bg-light h3,h2,p{
@@ -160,6 +173,14 @@ margin-bottom: 5px;
 margin-top: 22px;
 }
 
+.service-heading h4:hover{
+  background-position: right center; /* change the direction of the change here */
+}
+
+#tituloservicios{
+      background-image: linear-gradient(to right, red 0%, #fda085 51%, #f6d365 100%);
+
+}
 h3,h5,h6{
 color: white;
 font-family: 'Great Vibes', cursive;
