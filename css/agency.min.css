@@ -8,6 +8,12 @@ body{
 #page-top{
 
 }
+#desingtable{
+    display: none;
+}
+#btndiseñog{
+
+}
 
 #mivideo { 
  
@@ -25,6 +31,9 @@ body{
  
   background-size: cover;
  
+}
+#idtabledescripcionDesing{
+display: none;
 }
 #idtabledescripcion th{
 text-shadow: 1px 0px 1px rgba(192, 192, 192, 0.9);
@@ -131,7 +140,7 @@ cursor: pointer;
 background-size: 250% auto;
 
 background-image: linear-gradient(to right, #e7e7e7 0%, #f0f0f0 51%, #fff ,#fff ,#fff 100%);
-color: #155123;
+color: #000;
 }
 #tituloservicios h1:hover{
 background-position: right center; /* change the direction of the change here */

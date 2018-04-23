@@ -7,12 +7,7 @@ $("#tituloservicios").click(function(event) {
 
 });
 	
-$('#tituloservicios,#btnweb,#btntiendas,#btnwordpress,#btnjoomla,#btnapi,#btnbd').click(function() {
-
-
-		// $("#idtabledescripcion").each(function(){
-			 
-			/// document.getElementById("idtabledescripcion").style.display = 'block';
+$('#btninformatica,#btnweb,#btntiendas,#btnwordpress,#btnjoomla,#btnapi,#btnbd').click(function() {
 
 if( $('#idtabledescripcion').is(":visible") ){
 	
@@ -27,6 +22,25 @@ if( $('#idtabledescripcion').is(":visible") ){
 });
 
 
+
+$('#btndiseñog,#btnDesing,#btnDesingweb,#btnDesingnegocios,#btnDesingropa,#btnDesingarte,#btnDesinglibro,#btnDesingfolletos,#btnDesingcarteles,#btnDesingflyers').click(function() {
+
+
+if( $('#desingtable').is(":visible") ){
+	
+		$("[id*=desingtable]").hide();
+	
+	}else{
+		
+		$("[id*=desingtable]").show();		
+	
+		}
+
+});
+
+
+
+/*
 $('h4').click(function() {
 
 
@@ -47,6 +61,7 @@ if( $('#idtabledescripcion').is(":visible") ){
 
 
 });
+*/
 
 
 
