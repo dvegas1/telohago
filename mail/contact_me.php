@@ -40,7 +40,7 @@ if (isset($_SERVER['REMOTE_ADDR'])) {
  $direccion="NO APLICA";
 }
 
-$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE,DATE,$direccion) VALUES ('$name','$email_address','$phone','$message','$date','$direccion')");
+$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE,DATE,DIRECCION) VALUES ('$name','$email_address','$phone','$message','$date','$direccion')");
 
 $statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
