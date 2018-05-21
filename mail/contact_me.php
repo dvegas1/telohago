@@ -32,10 +32,10 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
+$date = date("Y-m-d H:i:s");
 
+$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE,DATE) VALUES ('$name','$email_address','$phone','$message','$date')");
 
-$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE) VALUES ('$name','$email_address','$phone','$message')");
-echo $statement;
 $statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
 
@@ -50,10 +50,8 @@ $headers = "From: darwin.vegas@hotmail.com\n"; // This is the email address the 
 
 $bool = mail($to,$email_subject,$email_body,$headers);*/
 
-if($bool){
+
     echo "Mensaje enviado";
-   return true;
-}
 
 
 
