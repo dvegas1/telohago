@@ -1,6 +1,12 @@
 <?php
 // Check for empty fields
+ if (file_exists("config.php")) {
+    include("config.php");
+  } else {
+    die();
+  }
 
+  
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
@@ -20,7 +26,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 $statement = ("INSERT INTO 'CONTACTUS' ('NAME', 'MAIL', 'NUMERO', 'MENSAGE') VALUES ('$name', '$email_address', '$message')");
 
-$statement1= pg_insert($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
+$statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
 
 
