@@ -35,7 +35,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 
 $statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE) VALUES ('$name', '$email_address','$phone,','$message')");
-
+echo $statement;
 $statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
 
