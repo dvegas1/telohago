@@ -25,10 +25,6 @@ if (!$connect) {
   exit;
 }
 
-$dbhost='ec2-50-19-224-165.compute-1.amazonaws.com';
-$dbname='dccva6brsskuij';
-$dbuser='qgytbuqtbffbfs';
-$dbpass='0e2daa973151c89bd3fb71a97acdf86711d96996bdcbd1cb1501bf1cb8e26b8b';
 
 
 $name = strip_tags(htmlspecialchars($_POST['name']));
@@ -38,7 +34,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 
 
-$statement = ("INSERT INTO 'CONTACTUS' ('NAME', 'MAIL', 'NUMERO', 'MENSAGE') VALUES ('$name', '$email_address','$phone,','$message')");
+$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE) VALUES ('$name', '$email_address','$phone,','$message')");
 
 $statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
