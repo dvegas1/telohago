@@ -33,8 +33,14 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 $date = date("Y-m-d H:i:s");
+$direccion="";
+if (isset($_SERVER['REMOTE_ADDR'])) {
+      $direccion=$_SERVER['REMOTE_ADDR'];      
+        }else{
+ $direccion="NO APLICA";
+}
 
-$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE,DATE) VALUES ('$name','$email_address','$phone','$message','$date')");
+$statement = ("INSERT INTO contactus (NAME,MAIL,NUMERO,MENSAGE,DATE,$direccion) VALUES ('$name','$email_address','$phone','$message','$date','$direccion')");
 
 $statement1= pg_query($connect,$statement) or die('La consulta fallo: ' . pg_last_error());
 
